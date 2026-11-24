@@ -1,5 +1,3 @@
-import math
-
 while True:
     print("\n ماشین حساب مهندسی ")
     print("1) جمع")
@@ -7,7 +5,6 @@ while True:
     print("3) ضرب")
     print("4) تقسیم")
     print("5) توان")
-    print("6) جذر")
     print("0) خروج")
 
     choice = input("انتخاب شما: ")
@@ -15,14 +12,6 @@ while True:
     if choice == "0":
         print("خارج شدید")
         break
-    #جذر
-    if choice == "6":
-        num = float(input("عدد را وارد کنید: "))
-        if num < 0:
-            print("عدد منفی جذر ندارد")
-        else:
-            print(f"جذر {num} = {math.sqrt(num)}")
-        continue   
     #عدد نامعتبر
     if choice != "1" and choice !="2" and choice !="3" and choice !="4" and choice !="5":
         print("انتخاب نامعتبر")
